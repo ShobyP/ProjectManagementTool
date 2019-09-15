@@ -55,4 +55,9 @@ public class ProjectController {
         projectService.deleteProjectByIdentifier(projectId);
         return new ResponseEntity<String>("Project with ID: '"+projectId+"' was deleted.", HttpStatus.OK);
     }
+
+    // for updating a project, we can use the database id and post it with updated information.
+    // jpa is smart enough to understand that this is an update.
+    // no put mapping is needed in that case.
+
 }
