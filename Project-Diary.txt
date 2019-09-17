@@ -9,10 +9,8 @@
 September 16 2019 06:18 Pm
 Full Stack Project Spring Boot 2.0 ReactJs and Redux
 3 – React and Redux Front-end Project CRUD Operations
-	Start Video 9. 
+	Start Video 10. 
 
 
 
-****
-Fix VS code on MacBook.
-Fix nom packages on Macbook.
+
