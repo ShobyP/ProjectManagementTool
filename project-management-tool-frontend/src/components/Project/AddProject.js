@@ -8,7 +8,7 @@ class AddProject extends React.Component {
       projectName: "",
       projectIdentifier: "",
       description: "",
-      start_date: "",
+      start_date: "", 
       end_date: ""
     };
     this.onChange = this.onChange.bind(this);
