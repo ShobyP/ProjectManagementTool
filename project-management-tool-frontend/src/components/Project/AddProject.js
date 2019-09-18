@@ -11,7 +11,8 @@ class AddProject extends React.Component {
       projectIdentifier: "",
       description: "",
       start_date: "",
-      end_date: ""
+      end_date: "",
+      errors: {}
     };
     this.onChange = this.onChange.bind(this);
     this.onSubmit = this.onSubmit.bind(this);
@@ -19,6 +20,13 @@ class AddProject extends React.Component {
 
   onChange(e) {
     this.setState({ [e.target.name]: e.target.value });
+  }
+
+  //lifecycle hook.
+  componentWillReceiveProps(nextProps) {
+    if (nextProps.errors) {
+      this.setState({ errors: nextProps.errors });
+    }
   }
 
   onSubmit(e) {
@@ -30,10 +38,11 @@ class AddProject extends React.Component {
       start_date: this.state.start_date,
       end_date: this.state.end_date
     };
-    this.props.createProject(newProject, this.props.history)
+    this.props.createProject(newProject, this.props.history);
   }
- 
+
   render() {
+    const { errors } = this.state;
     return (
       <div>
         <div className="project">
@@ -52,6 +61,7 @@ class AddProject extends React.Component {
                       value={this.state.projectName}
                       onChange={this.onChange}
                     />
+                    <p>{errors.projectName}</p>
                   </div>
                   <div className="form-group">
                     <input
@@ -62,6 +72,7 @@ class AddProject extends React.Component {
                       value={this.state.projectIdentifier}
                       onChange={this.onChange}
                     />
+                    <p>{errors.projectIdentifier}</p>
                   </div>
                   <div className="form-group">
                     <textarea
@@ -71,6 +82,7 @@ class AddProject extends React.Component {
                       value={this.state.description}
                       onChange={this.onChange}
                     ></textarea>
+                    <p>{errors.description}</p>
                   </div>
                   <h6>Start Date</h6>
                   <div className="form-group">
@@ -108,10 +120,16 @@ class AddProject extends React.Component {
 }
 
 AddProject.propTypes = {
-  createProject : PropTypes.func.isRequired
-}
+  //create project is a function - check projectAction Action file.
+  createProject: PropTypes.func.isRequired,
+  //errors is an error object - check redux store.
+  errors: PropTypes.object.isRequired
+};
+const mapStateToProps = state => ({
+  errors: state.errors
+});
 
 export default connect(
-  null,
+  mapStateToProps,
   { createProject }
 )(AddProject);
