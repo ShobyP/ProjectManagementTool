@@ -1,15 +1,9 @@
 
 
-
-
-
-
-
-
-September 16 2019 06:17 pm 
+September 16 2019 10:00 Pm
 Full Stack Project Spring Boot 2.0 ReactJs and Redux
 3 – React and Redux Front-end Project CRUD Operations
-	resume Video 12 at 7:58
+	Start Video 13 
 
 Creating project Actions.
 
