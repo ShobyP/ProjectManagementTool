@@ -1,11 +1,12 @@
 
 
-September 16 2019 10:00 Pm
+September 19 2019 6:15 Pm
 Full Stack Project Spring Boot 2.0 ReactJs and Redux
 3 – React and Redux Front-end Project CRUD Operations
-	Start Video 14 
+	Video 15
+	resume at 6:00 min. 
 
-Formatting error display on create project form.
+Working on redux store setup.
 
 
 
