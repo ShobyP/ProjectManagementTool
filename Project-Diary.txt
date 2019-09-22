@@ -2,11 +2,11 @@
 
 September 19 2019 6:15 Pm
 Full Stack Project Spring Boot 2.0 ReactJs and Redux
-3 – React and Redux Front-end Project CRUD Operations
-	Video 24
+4 – Add project Tasks - BackEnd
+	Video 2
 	resume at 0:00 min. 
 
-Work on deleting a project.
+Backlog and project Entities.
 
 
 
