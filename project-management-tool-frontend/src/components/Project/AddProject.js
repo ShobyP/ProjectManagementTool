@@ -23,8 +23,8 @@ class AddProject extends React.Component {
     this.setState({ [e.target.name]: e.target.value });
   }
 
-  //lifecycle hook.
-  componentWillReceiveProps(nextProps) {
+  //this needs refactor - react will not support componentWillReceiveProps.
+  UNSAFE_componentWillReceiveProps(nextProps) {
     if (nextProps.errors) {
       this.setState({ errors: nextProps.errors });
     }
