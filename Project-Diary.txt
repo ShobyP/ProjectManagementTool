@@ -1,13 +1,14 @@
 
 
-September 22 2019 4:04 Pm
+September 24 2019 6:15 Pm
 Full Stack Project Spring Boot 2.0 ReactJs and Redux
 4 – Add project Tasks - BackEnd
-	Video 4
+	Video 8
 	resume at 0:00 min. 
 
-Backlog and project Entities.
-
+Just finished Decoupling project and backlog payload on the database layer.
+Created supporting entities, repositories, services and controller action.
+Project backlog can get pulled from database using backlog ID.
 
 
 
