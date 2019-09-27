@@ -1,12 +1,13 @@
 
 
-September 24 2019 6:15 Pm
+September 27 2019 6:21 Pm
 Full Stack Project Spring Boot 2.0 ReactJs and Redux
 4 – Add project Tasks - BackEnd
-	Video 9
-	resume at 13:00 min. 
+	Video 11
+	resume at 00:00 min. 
 
-Working on project not found exception. Reusing project ID not found exception.
+Finished exception handling for project task.
+Finished get mapping for project Task (Repository, Service, controller)
 
 
 
