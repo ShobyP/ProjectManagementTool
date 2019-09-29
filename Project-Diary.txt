@@ -2,12 +2,10 @@
 
 September 28 2019 6:28 Pm
 Full Stack Project Spring Boot 2.0 ReactJs and Redux
-4 – Add project Tasks - BackEnd
-	Video 12
+5 – Add project Tasks - React Redux
+	Video 4
 	resume at 00:00 min. 
 
-Finished exception handling for project task.
-Finished get mapping for project Task (Repository, Service, controller)
-
+Designing the folder structure.
 
 
