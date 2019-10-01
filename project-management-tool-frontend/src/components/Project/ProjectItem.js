@@ -53,6 +53,7 @@ class ProjectItem extends Component {
   }
 }
 
+//remember to add proptype with small p and call it through classname.
 ProjectItem.propTypes = {
   deleteProject: PropTypes.func.isRequired
 };
