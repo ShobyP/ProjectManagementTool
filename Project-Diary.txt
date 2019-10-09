@@ -1,10 +1,10 @@
 
 
-September 28 2019 6:28 Pm
+October 8 2019 6:19 Pm
 Full Stack Project Spring Boot 2.0 ReactJs and Redux
 5 – Add project Tasks - React Redux
 	Video 5
-	resume at 08:17 min. 
+	resume at 14:29 min. 
 
-ProjectBoard needs work, insert HTML from reference and clean it up for proper usage.
+WIP - Project sub task addition. 
 
