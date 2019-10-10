@@ -23,9 +23,14 @@ class AddProject extends React.Component {
     this.setState({ [e.target.name]: e.target.value });
   }
 
-  //this needs refactor - react will not support componentWillReceiveProps.
-  UNSAFE_componentWillReceiveProps(nextProps) {
-    if (nextProps.errors) {
+  /**
+   * replacing componentWillReceiveProps logic to componentDidUpdate.
+   * this change was important because componentWillReceiveProps is a sync method
+   * and it calls an unsync method (briefly put)
+   */
+
+  componentDidUpdate(nextProps, prevProps) {
+    if (nextProps.errors !== prevProps.errors) {
       this.setState({ errors: nextProps.errors });
     }
   }
